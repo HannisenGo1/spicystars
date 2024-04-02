@@ -8,7 +8,8 @@ function Menu() {
       description: 'En indisk rätt med kyckling serveras med ris',
       strength: '4/5',
       price: '109',
-      image: 'https://cdn2.cdnme.se/1610674/8-3/chicken-vindaloo-curry-kyckling-indisk-mat-middag-tips_5fd7011d9606ee0ecc3ac546.jpg'
+      image: 'https://cdn2.cdnme.se/1610674/8-3/chicken-vindaloo-curry-kyckling-indisk-mat-middag-tips_5fd7011d9606ee0ecc3ac546.jpg',
+	  id:'1'
     },
     {
       name: 'Aloo Gobi',
@@ -17,7 +18,8 @@ function Menu() {
       description: 'En indisk rätt med potatis och blomkål',
       strength: '2/5',
       price: '99',
-      image: 'https://res.cloudinary.com/coopsverige/image/upload/ar_1.0,f_auto,c_fill,w_300,g_center/v1576589656/387309.jpg'
+      image: 'https://res.cloudinary.com/coopsverige/image/upload/ar_1.0,f_auto,c_fill,w_300,g_center/v1576589656/387309.jpg',
+	  id:'2'
     },
     {
       name: 'Lamm Vindaloo',
@@ -25,7 +27,8 @@ function Menu() {
       description: 'En kryddig och smakrik lammgryta',
       strength: '5/5',
       price: '119',
-      image: 'https://www.cubesnjuliennes.com/wp-content/uploads/2023/10/Lamb-Vindaloo-1-1025x1536.jpg'
+      image: 'https://www.cubesnjuliennes.com/wp-content/uploads/2023/10/Lamb-Vindaloo-1-1025x1536.jpg',
+	  id:'3'
     },
     {
       name: 'Szechuan Stir-Fry',
@@ -34,7 +37,8 @@ function Menu() {
       description: 'En kinesisk klassiker',
       strength: '4/5',
       price: '109',
-      image: 'https://monkeyandmekitchenadventures.com/wp-content/uploads/2019/07/Szechuan-Veggie-Stir-Fry_04.jpg'
+      image: 'https://monkeyandmekitchenadventures.com/wp-content/uploads/2019/07/Szechuan-Veggie-Stir-Fry_04.jpg',
+	  id:'4'
     },
     {
       name: 'Aloo Baingan',
@@ -43,7 +47,8 @@ function Menu() {
       description: 'En kryddig och smakrik lammgryta',
       strength: '3/5',
       price: '99',
-      image: 'https://www.jcookingodyssey.com/wp-content/uploads/2023/04/aloo-baingan.jpg.webp'
+      image: 'https://www.jcookingodyssey.com/wp-content/uploads/2023/04/aloo-baingan.jpg.webp',
+	  id:'5'
     }
     ]
 
@@ -52,9 +57,9 @@ return (
 		<h1> MENY </h1>
       {menuFood.map((mat, index) => (
         <div key={index} className="meny-container">
-          <h2>{mat.name}</h2>
+          <h2>{mat.id}. {mat.name}</h2>
 		  <img src={mat.image} alt={mat.name} style={{maxWidth:'250px', minWidth:'250px', maxHeight:'250px', minHeight:'250px', borderRadius:'30%'}} />
-          {mat.type && <p> {mat.type}</p>}
+          <p> {mat.type}</p>
 		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
           <p> Styrka: {mat.strength}</p>
