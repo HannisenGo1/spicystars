@@ -10,7 +10,6 @@ function App() {
   return (
     <>
    <div className='foodMenu'> 
-   <h1> Välkommen </h1>
    <Menu /> 
    </div>
     </>

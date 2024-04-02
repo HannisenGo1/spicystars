@@ -1,1 +1,28 @@
+body {
+	background-color: rgb(17, 68, 56);
+}
 
+.menyFoodDiv{
+	
+	align-items: center;
+	text-align: center;
+}
+.meny-container{
+	border: 1px solid rgb(22, 141, 62);
+	border-radius: 10%;
+		align-items: center;
+		text-align: center;
+		margin-left: 3em;
+		margin-bottom: 0.5em;
+	
+}
+
+
+h1, h2{
+	text-align: center;
+	color:white;
+}
+
+p{
+	color:white;
+}

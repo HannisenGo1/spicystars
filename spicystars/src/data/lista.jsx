@@ -1,20 +1,20 @@
+
+
 function Menu() {
   const menuFood = [
     {
       name: 'Kyckling Vindaloo',
       ingredients: ['Kyckling', 'lök', 'vitlök', 'ingefära', 'vinäger'],
-      spices: ['chili', 'ingefära', 'salt', 'peppar'],
-      description: 'En het indisk rätt med kyckling serveras med ris',
+      description: 'En indisk rätt med kyckling serveras med ris',
       strength: '4/5',
       price: '109',
-      image: 'https://www.gronagardar.se/website/var/tmp/image-thumbnails/0/1481/thumb__detailimage/Vindaloo_710px@2x.jpeg'
+      image: 'https://cdn2.cdnme.se/1610674/8-3/chicken-vindaloo-curry-kyckling-indisk-mat-middag-tips_5fd7011d9606ee0ecc3ac546.jpg'
     },
     {
       name: 'Aloo Gobi',
       type: 'Vegetarisk',
       ingredients: ['Potatis', 'blomkål', 'lök', 'tomater', 'vitlök', ],
-      spices: ['chili', 'ingefära', 'garam masala'],
-      description: 'En indisk rätt med potatis och blomkål kokta i en kryddig sås',
+      description: 'En indisk rätt med potatis och blomkål',
       strength: '2/5',
       price: '99',
       image: 'https://res.cloudinary.com/coopsverige/image/upload/ar_1.0,f_auto,c_fill,w_300,g_center/v1576589656/387309.jpg'
@@ -22,7 +22,6 @@ function Menu() {
     {
       name: 'Lamm Vindaloo',
       ingredients: ['Lammkött', 'vinäger', 'lök', 'vitlök', 'ingefära'],
-      spices: ['chili', 'kryddor'],
       description: 'En kryddig och smakrik lammgryta',
       strength: '5/5',
       price: '119',
@@ -30,19 +29,17 @@ function Menu() {
     },
     {
       name: 'Szechuan Stir-Fry',
-      type: 'Vegetarisk',
-      ingredients: ['broccoli', 'paprika', 'lök', 'Szechuan-sås', 'vitlök', 'ingefära'],
-      spices: ['chili'],
+      type: 'Vegansk',
+      ingredients: ['broccoli', 'paprika', 'lök', 'ingefära'],
       description: 'En kinesisk klassiker',
       strength: '4/5',
       price: '109',
-      image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2011%2F12%2F14%2Fszechuan-chicken-stir-fry-1711p46.jpg'
+      image: 'https://monkeyandmekitchenadventures.com/wp-content/uploads/2019/07/Szechuan-Veggie-Stir-Fry_04.jpg'
     },
     {
       name: 'Aloo Baingan',
       type: 'Vegansk',
-      ingredients: ['Potatis', 'aubergine', 'lök', 'tomater', 'ingefära', 'vitlök'],
-      spices: ['chili', 'garam masala'],
+      ingredients: ['Potatis', 'aubergine', 'lök', 'tomat', 'ingefära'],
       description: 'En kryddig och smakrik lammgryta',
       strength: '3/5',
       price: '99',
@@ -51,16 +48,16 @@ function Menu() {
     ]
 
 return (
-	 <div>
+	 <div className="menyFoodDiv">
+		<h1> MENY </h1>
       {menuFood.map((mat, index) => (
-        <div key={index}>
+        <div key={index} className="meny-container">
           <h2>{mat.name}</h2>
-		  <img src={mat.image} alt={mat.name} style={{maxWidth:'230px'}} />
+		  <img src={mat.image} alt={mat.name} style={{maxWidth:'250px', minWidth:'250px', maxHeight:'250px', minHeight:'250px', borderRadius:'30%'}} />
           {mat.type && <p> {mat.type}</p>}
+		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
-          <p>kryddor: {mat.spices.join(', ')}</p>
-          <p>Beskrivning: {mat.description}</p>
-          <p>styrka: {mat.strength}</p>
+          <p> Styrka: {mat.strength}</p>
           <p>Pris: {mat.price}</p>
           
         </div>
