@@ -1,4 +1,4 @@
-
+// <img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f336.svg"/> 
 
 function Menu() {
   const menuFood = [
@@ -64,8 +64,7 @@ return (
           <p> {mat.type}</p>
 		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
-          <p> 
-	<img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f336.svg"/>  {mat.strength} </p>
+          <p>  {mat.strength} </p>
           <p>Pris: {mat.price}</p>
           
         </div>
