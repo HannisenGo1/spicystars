@@ -1,5 +1,6 @@
 // <img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f336.svg"/> 
 //  <p> {mat.type}</p>
+import PepparPicture from '../components/pepparimage'
 
 function Menu() {
   const menuFood = [
@@ -55,6 +56,8 @@ function Menu() {
     }
     ]
 
+	
+
 return (
 	<> 
 	<div className="textmeny"> <h1> MENY </h1> </div>
@@ -63,11 +66,11 @@ return (
       {menuFood.map((mat, index) => (
         <div key={index} className="meny-container">
           <h2>{mat.id}. {mat.name}</h2>
-		  <img src={mat.image} alt={mat.name} style={{maxWidth:'125px', minWidth:'125px', maxHeight:'125px', minHeight:'125px', borderRadius:'30%'}} />
-         
+		  <img src={mat.image} alt={mat.name} style={{maxWidth:'125px', minWidth:'125px', maxHeight:'125px', minHeight:'125px'}} />
+         <p> {PepparPicture()}  {mat.strength} </p>
 		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
-          <p>  {mat.strength} </p>
+          
           <p>Pris: {mat.price}<button> Lägg till</button></p>
 		  //koppla button med price och id för att räkna ut i beställning som ska hamna i 'kundvagnen'
           
