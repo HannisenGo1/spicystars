@@ -66,6 +66,7 @@ return (
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
           <p>  {mat.strength} </p>
           <p>Pris: {mat.price}<button> Lägg till</button></p>
+		  //koppla button med price och id för att räkna ut i beställning som ska hamna i 'kundvagnen'
           
         </div>
       ))}

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Menu from './data/lista'
 import Form from './components/Form'
+import MyPicture from './components/imageFront'
 
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
 
   return (
     <>
-	
+	<div> 
+	<MyPicture/>
+	</div>
    <div className='foodMenu'> 
    <Menu /> 
    </div>
