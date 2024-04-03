@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(17, 68, 56);
+	background-color: black;
 }
 
 .menyFoodDiv{
@@ -17,12 +17,22 @@ body {
 	
 }
 
+.form-Info {
+	display: flex;
+		flex-direction: column;
+		border-radius: 0.4em;
+		padding: 1em;
+		margin: 1em 0;
+		background-color: rgb(32, 165, 32);
+		margin-bottom: 3em;
+	}
+
 
 h1, h2{
 	text-align: center;
-	color:white;
+	color:orange;
 }
 
 p{
-	color:white;
+	color:orange;
 }

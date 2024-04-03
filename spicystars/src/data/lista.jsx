@@ -7,6 +7,7 @@ function Menu() {
       ingredients: ['Kyckling', 'lök', 'vitlök', 'ingefära', 'vinäger'],
       description: 'En indisk rätt med kyckling serveras med ris',
       strength: '4/5',
+	  type: kyckling, 
       price: '109',
       image: 'https://cdn2.cdnme.se/1610674/8-3/chicken-vindaloo-curry-kyckling-indisk-mat-middag-tips_5fd7011d9606ee0ecc3ac546.jpg',
 	  id:'1'
@@ -17,6 +18,7 @@ function Menu() {
       ingredients: ['Potatis', 'blomkål', 'lök', 'tomater', 'vitlök', ],
       description: 'En indisk rätt med potatis och blomkål',
       strength: '2/5',
+	  type:kött,
       price: '99',
       image: 'https://res.cloudinary.com/coopsverige/image/upload/ar_1.0,f_auto,c_fill,w_300,g_center/v1576589656/387309.jpg',
 	  id:'2'
@@ -62,7 +64,8 @@ return (
           <p> {mat.type}</p>
 		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
-          <p> Styrka: {mat.strength}</p>
+          <p> 
+	<img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f336.svg"/>  {mat.strength} </p>
           <p>Pris: {mat.price}</p>
           
         </div>
