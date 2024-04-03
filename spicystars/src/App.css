@@ -6,14 +6,25 @@ body {
 .menyFoodDiv{
 	align-items: center;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100vw;
+
 }
+
 .meny-container{
 	border: 1px solid rgb(215, 136, 17);
-	border-radius: 10%;
-		align-items: center;
-		text-align: center;
-		margin-left: 3em;
-		margin-bottom: 0.5em;
+	flex-wrap: wrap;
+	gap: 2em;
+	align-items: center;
+	text-align: center;
+	margin-left: 3em;
+	min-height: 30em;
+	max-height: 30em;
+	min-width: 30em;
+	max-width: 30em;
+	margin-bottom: 2em;
 }
 
 .form-Info {
@@ -23,14 +34,17 @@ body {
 		padding: 1em;
 		margin: 1em 0;
 		background-color: rgb(215, 136, 17);
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 	}
+
+.form-div{
+	max-width: 15em;
+}
 .frontPicture{
 	display: flex;
 	background-repeat: no-repeat;
 	min-height: 10px;
 	min-width: 100px;
-	
 }
 
 h1, h2{

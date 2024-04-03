@@ -1,4 +1,5 @@
 // <img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f336.svg"/> 
+//  <p> {mat.type}</p>
 
 function Menu() {
   const menuFood = [
@@ -18,7 +19,6 @@ function Menu() {
       ingredients: ['Potatis', 'blomkål', 'lök', 'tomater', 'vitlök', ],
       description: 'En indisk rätt med potatis och blomkål',
       strength: '2/5',
-	  type: 'kött',
       price: '99',
       image: 'https://res.cloudinary.com/coopsverige/image/upload/ar_1.0,f_auto,c_fill,w_300,g_center/v1576589656/387309.jpg',
 	  id:'2'
@@ -29,6 +29,7 @@ function Menu() {
       description: 'En kryddig och smakrik lammgryta',
       strength: '5/5',
       price: '119',
+	  type: 'kött',
       image: 'https://www.cubesnjuliennes.com/wp-content/uploads/2023/10/Lamb-Vindaloo-1-1025x1536.jpg',
 	  id:'3'
     },
@@ -55,13 +56,15 @@ function Menu() {
     ]
 
 return (
+	<> 
+	<div className="textmeny"> <h1> MENY </h1> </div>
 	 <div className="menyFoodDiv">
-		<h1> MENY </h1>
+		
       {menuFood.map((mat, index) => (
         <div key={index} className="meny-container">
           <h2>{mat.id}. {mat.name}</h2>
-		  <img src={mat.image} alt={mat.name} style={{maxWidth:'250px', minWidth:'250px', maxHeight:'250px', minHeight:'250px', borderRadius:'30%'}} />
-          <p> {mat.type}</p>
+		  <img src={mat.image} alt={mat.name} style={{maxWidth:'125px', minWidth:'125px', maxHeight:'125px', minHeight:'125px', borderRadius:'30%'}} />
+         
 		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
           <p>  {mat.strength} </p>
@@ -71,6 +74,7 @@ return (
         </div>
       ))}
     </div>
+	</>
 )};
 
 export default Menu
