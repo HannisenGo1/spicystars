@@ -1,9 +1,10 @@
 // <img src="https://s.w.org/images/core/emoji/14.0.0/svg/1f336.svg"/> 
 //  <p> {mat.type}</p>
 import PepparPicture from '../components/pepparimage'
+import { useState } from 'react'
 
 function Menu() {
-  const menuFood = [
+  const [menuFood, setMenuFood] = useState ([
     {
       name: 'Kyckling Vindaloo',
       ingredients: ['Kyckling', 'lök', 'vitlök', 'ingefära', 'vinäger'],
@@ -54,10 +55,12 @@ function Menu() {
       image: 'https://www.jcookingodyssey.com/wp-content/uploads/2023/04/aloo-baingan.jpg.webp',
 	  id:'5'
     }
-    ]
+    ])
 
+	// lägga till function för att redigera
+	//lägga till function för att ta bort
+	//funktion för att lägga till i listan
 	
-
 return (
 	<> 
 	<div className="textmeny"> <h1> MENY </h1> </div>
