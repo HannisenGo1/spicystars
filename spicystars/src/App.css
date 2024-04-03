@@ -1,20 +1,19 @@
 body {
 	background-color: black;
+	align-items: center;
 }
 
 .menyFoodDiv{
-	
 	align-items: center;
 	text-align: center;
 }
 .meny-container{
-	border: 1px solid rgb(22, 141, 62);
+	border: 1px solid rgb(215, 136, 17);
 	border-radius: 10%;
 		align-items: center;
 		text-align: center;
 		margin-left: 3em;
 		margin-bottom: 0.5em;
-	
 }
 
 .form-Info {
@@ -23,7 +22,7 @@ body {
 		border-radius: 0.4em;
 		padding: 1em;
 		margin: 1em 0;
-		background-color: rgb(32, 165, 32);
+		background-color: rgb(215, 136, 17);
 		margin-bottom: 3em;
 	}
 

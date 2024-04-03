@@ -65,7 +65,7 @@ return (
 		   <p>{mat.description}</p>
           <p>Ingredienser: {mat.ingredients.join(', ')}</p>
           <p>  {mat.strength} </p>
-          <p>Pris: {mat.price}</p>
+          <p>Pris: {mat.price}<button> Lägg till</button></p>
           
         </div>
       ))}

@@ -14,6 +14,8 @@ function App() {
 	
    <div className='foodMenu'> 
    <Menu /> 
+   </div>
+   <div className='form-div'> 
    <Form/>
    </div>
     </>
